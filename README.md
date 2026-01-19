@@ -6,6 +6,9 @@ An AI-powered security automation tool that detects AWS S3 vulnerabilities and p
 
 This project implements an automated security scanner for AWS S3 buckets that identifies public access block misconfigurations and uses AI-assisted remediation through Cursor and AWS MCP (Model Context Protocol) to fix vulnerabilities safely.
 
+## 📊 Project Blueprint
+![Image](https://github.com/abhinavbiju/Automated-S3-Security-Scanner/issues/1#issue-3830878995)
+
 ## ✨ Features
 
 - 🔍 **Automated Security Scanning** - Detects S3 Public Access Block misconfigurations across your AWS environment
