@@ -1,24 +1,24 @@
-# ☁️ Automated AWS S3 Security Scanner
+# Automated AWS S3 Security Scanner
 
 An AI-powered security automation tool that detects AWS S3 vulnerabilities and provides automated remediation with approval workflows.
 
-## 🎯 Overview
+## Overview
 
 This project implements an automated security scanner for AWS S3 buckets that identifies public access block misconfigurations and uses AI-assisted remediation through Cursor and AWS MCP (Model Context Protocol) to fix vulnerabilities safely.
 
-## 📊 Project Blueprint
+## Project Blueprint
 <img src= "https://i.imgur.com/gi79MeO.png" width="100%" alt="Terminial view">
 
-## ✨ Features
+## Features
 
-- 🔍 **Automated Security Scanning** - Detects S3 Public Access Block misconfigurations across your AWS environment
-- 🤖 **AI-Powered Remediation** - Leverages Cursor with AWS MCP for intelligent security fixes
-- ✅ **Approval Workflow** - Requires explicit approval before applying any changes to your infrastructure
-- 📊 **Risk Assessment** - Identifies and categorizes security vulnerabilities
-- 🐍 **Python & Boto3** - Built with robust AWS SDK integration
-- 🔧 **Flexible Execution** - Currently on-demand with capability to extend to scheduled or trigger-based runs
+- **Automated Security Scanning** - Detects S3 Public Access Block misconfigurations across your AWS environment
+- **AI-Powered Remediation** - Leverages Cursor with AWS MCP for intelligent security fixes
+- **Approval Workflow** - Requires explicit approval before applying any changes to your infrastructure
+- **Risk Assessment** - Identifies and categorizes security vulnerabilities
+- **Python & Boto3** - Built with robust AWS SDK integration
+- **Flexible Execution** - Currently on-demand with capability to extend to scheduled or trigger-based runs
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **AWS S3** - Object storage service
 - **Python** - Core programming language
@@ -26,7 +26,7 @@ This project implements an automated security scanner for AWS S3 buckets that id
 - **Cursor** - AI-powered code editor with AWS MCP integration
 - **AWS MCP** - Model Context Protocol for AWS control through chat
 
-## 📋 Prerequisites
+## Prerequisites
 
 - AWS Account with S3 access
 - Python 3.12 installed
@@ -34,7 +34,7 @@ This project implements an automated security scanner for AWS S3 buckets that id
 - Appropriate IAM permissions for S3 operations
 - Cursor IDE (for AI-assisted remediation)
 
-## 🔐 AWS Configuration
+## AWS Configuration
 
 ### Before running the scanner, ensure your AWS credentials are properly configured:
 ### Open your terminal and check to see if AWS CLI is installed:
@@ -50,7 +50,7 @@ msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
 ```
 
 
-## 📦 Installation
+## Installation
 - Check if you have AWS credentials configured
 ```bash
 aws sts get-caller-identity
@@ -84,13 +84,13 @@ uv --version
 iwr https://astral.sh/uv/install.ps1 -UseBasicParsing | iex
 ```
 
-## 📸 Screenshots
+## Screenshots
 
 ### Building the S3 Scanner through a Python file (Code posted):
 
 ![Image](http://learn.nextwork.org/overjoyed_amber_trusty_clove/uploads/ai-aws-security-guard_aws5f6g7h)
 
-# 💡 What does this code do?
+# What does this code do?
 
 ### This creates the basic structure of your scanner:
 
@@ -128,7 +128,7 @@ iwr https://astral.sh/uv/install.ps1 -UseBasicParsing | iex
   }
 }
 ```
-# 💡 What does this configuration do?
+# What does this configuration do?
 ### This JSON tells Cursor how to start the AWS MCP server:
 
 - "command": "uv" - Tells Cursor to use the uv package manager to run the server
@@ -191,7 +191,7 @@ Can you help me fix all CRITICAL findings by enabling public access blocks on th
 ### Final Output
 <img src= "https://imgur.com/TyJ70RK.png" width="100%" alt="Terminial view">
 
-## 🔄 Cloud Security Workflow
+## Cloud Security Workflow
  
 1. **Scan** - The scanner examines all S3 buckets for public access misconfigurations
 2. **Detect** - Identifies buckets with Public Access Block disabled or misconfigured
@@ -199,7 +199,7 @@ Can you help me fix all CRITICAL findings by enabling public access blocks on th
 4. **Approve** - User reviews and approves recommended changes via Cursor
 5. **Remediate** - Automated application of security fixes to vulnerable buckets
 
-## 🎛️ Execution Modes
+## Execution Modes
 
 ### Current: On-Demand
 Run the scanner manually whenever needed.
@@ -208,14 +208,14 @@ Run the scanner manually whenever needed.
 - **Scheduled** - Run scans at regular intervals (hourly, daily, weekly)
 - **Trigger-Based** - Execute scans based on CloudWatch Events or S3 bucket creation
 
-## ⚠️ Security Considerations
+## Security Considerations
 
 - Always review proposed changes before approval
 - Test in a non-production environment first
 - Ensure proper IAM roles and permissions
 - Monitor AWS CloudTrail for audit logging
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - AWS for S3 and boto3 SDK
 - Cursor for AI-powered development tools
